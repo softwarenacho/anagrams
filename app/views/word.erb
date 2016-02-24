@@ -1,0 +1,19 @@
+<h1>Find Anagrams!</h1>
+
+<% if @anagrams.length > 1 %>
+  <p>These are anagrams for <%= @new_word %>:</p>
+  
+  <% @anagrams.each do |word|%>
+  
+      <p><%= word.words %></p>
+  <% end %>
+
+<% else %>
+
+  <p> Sorry, no anagrams. </p>
+
+<% end %>
+
+<%= erb :form %>
+
+
